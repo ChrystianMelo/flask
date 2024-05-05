@@ -193,7 +193,8 @@ class Blueprint(Scaffold):
         )
 
         if not name:
-            raise ValueError("'name' may not be empty.")
+            name = "default"
+            #raise ValueError("'name' may not be empty.")
 
         if "." in name:
             raise ValueError("'name' may not contain a dot '.' character.")
